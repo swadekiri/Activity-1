@@ -13,10 +13,11 @@ Cur_Pos=random.randint(1,5)
 ASSIGNING RANDOM DISTANCES TO POSSIBLE ROUTES
 '''
 #1D ARRAY STORAGE, 'd stands for distance'
-distances = ['d1','d2','d3','d4','d5','d6','ETA','gen_pos']
+array_1d = ['distance1=0','distance2=0','distance3=0','distance1=4','distance5=0'
+    ,'distance6=0','ETA','gen_cur_pos']
 
-distances[0]=RD1;distances[1]=RD2;distances[2]=RD3;distances[3]=RD4
-distances[4]=RD5;distances[4]=RD6
+array_1d[0]=RD1;array_1d[1]=RD2;array_1d[2]=RD3;array_1d[3]=RD4
+array_1d[4]=RD5;array_1d[5]=RD6
 #TEST RANDOM DISTANCE
 print(RD1,RD2,RD3,RD4,RD5,RD6)
 
@@ -66,4 +67,6 @@ sel_des_loc(d)'''
 MINS=RD1/.1
 HRS=MINS/60
 APROX = "{:.0f}".format(HRS)
-print(f'Aproximately: {APROX} Hours')
+array_1d[6]=APROX
+print(f'Aproximately: {APROX} Hours \n1D Array: {array_1d}')
+
